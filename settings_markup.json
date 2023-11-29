@@ -1,0 +1,73 @@
+{
+    "menu button":{
+        "type":"container",
+        "constraint":["LEFT", "TOP"],
+        "childs":{
+            "panel":{
+                "type":"image",
+                "image":"blue_panel",
+                "scale":[0.2, 0.1],
+                "on_up":"open_menu"
+            },
+            "icon":{
+                "type":"image",
+                "scale":[0.1, 0.1],
+                "image":"decline_icon"
+            }
+        }
+    },
+    "volume":{
+        "type":"container",
+        "constraint":["CENTER", "CENTER"],
+        "childs":{
+            "panel":{
+                "type":"image",
+                "image":"blue_panel_long",
+                "scale":[0.4, 0.1]
+            },
+            "volume icon":{
+                "type":"image",
+                "scale":[0.1, 0.1],
+                "image":"volume_icon",
+                "snap_in":["panel", "LEFT"]
+            },
+            "toogle":{
+                "value":0.2,
+                "scale":[0.3, 0.05],
+                "snap_to":["volume icon", "RIGHT"]
+            }
+        }
+    },
+    "version info":{
+        "type":"container",
+        "constraint":["LEFT", "BOTTOM"],
+        "childs":{
+            "panel":{
+                "type":"image",
+                "image":"gray_panel",
+                "scale":[0.2, 0.1]
+            },
+            "version":{
+                "type":"text",
+                "text":"VERSION",
+                "scale":[0.2, 0.1]
+            }
+        }
+    },
+    "player name":{
+        "type":"container",
+        "constraint":["CENTER", "BOTTOM"],
+        "childs":{
+            "panel":{
+                "type":"image",
+                "image":"blue_panel",
+                "scale":[0.2, 0.1]
+            },
+            "name":{
+                "type":"text",
+                "text":"PLAYER NAME",
+                "scale":[0.2, 0.1]
+            }
+        }
+    }
+}
